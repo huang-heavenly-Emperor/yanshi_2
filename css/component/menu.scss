@@ -1,0 +1,73 @@
+// 颜色变量定义
+$color-white: #fff;
+$color-bg-default: rgba(0, 0, 0, 0.66);
+$color-hamburger-bg: $color-white;
+$color-hamburger-active-bg: rgba(172, 224, 249, 0.66);
+$color-text-active: rgba(172, 224, 249, 0.66);
+
+.m_switch {
+  width: 100px;
+  transform: scale(0.5) translateX(-40px);
+  margin-left: 0px;
+  display: none;
+
+  #menu {
+    visibility: hidden;
+    position: relative;
+  }
+
+  /* 隐藏复选框 */
+
+  /* 汉堡菜单 */
+  label {
+    width: 100px;
+    height: 15px;
+    border-radius: 5px;
+    background: $color-hamburger-bg; // 使用颜色变量
+    cursor: pointer;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    position: fixed;
+  }
+
+  label:before {
+    content: "";
+    width: 100px;
+    height: 15px;
+    background: $color-hamburger-bg; // 使用颜色变量
+    position: absolute;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    border-radius: 5px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  label:after {
+    content: "";
+    width: 100px;
+    height: 15px;
+    background: $color-hamburger-bg; // 使用颜色变量
+    position: absolute;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    border-radius: 5px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  /* 选中时的动画 */
+  #menu:checked + label {
+    width: 0px;
+  }
+
+  #menu:checked + label:before {
+    transform: rotate(45deg) translate(0);
+    -webkit-transform: rotate(45deg) translate(0);
+  }
+
+  #menu:checked + label:after {
+    transform: rotate(-45deg) translate(0);
+    -webkit-transform: rotate(-45deg) translate(0);
+  }
+}

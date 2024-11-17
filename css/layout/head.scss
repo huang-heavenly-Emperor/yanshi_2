@@ -1,0 +1,160 @@
+// 颜色变量定义
+$color-transparent: transparent;
+$color-white: #fff;
+$color-black-transparent: rgba(0, 0, 0, 0.66);
+$color-shadow: rgba(0, 0, 0, 0.2);
+$color-nav-item-hover: rgba(172, 224, 249, 0.66);
+$color-nav-item-active: rgba(172, 224, 249, 0.66);
+$color-aliceblue: aliceblue;
+
+.header_outer {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  margin-top: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .header_inner {
+    margin: 0 auto;
+    color: $color-aliceblue;
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    transition: background-color 0.3s linear, width 0.3s linear, border-radius 0.3s linear;
+    top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding-right: 20px;
+    background-color: $color-transparent;
+
+    .logo {
+      height: 100%;
+      line-height: 60px;
+      font-size: 30px;
+      font-weight: 600;
+
+      padding-left: 10px;
+      box-sizing: border-box;
+      cursor: default;
+      background-color: rgb(255, 255, 255);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .header_inner_scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $color-black-transparent;
+    z-index: 999;
+    box-shadow: 0 2px 4px $color-shadow;
+    box-sizing: border-box;
+    border-radius: 0;
+    transition: background-color 0.3s linear, width 0.3s linear, border-radius 0.3s linear;
+    overflow: hidden;
+  }
+
+  .header_inner:hover {
+    background-color: $color-black-transparent;
+
+    .logo {
+
+      border-radius: 10px;
+    }
+  }
+
+  .user_center {
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      width: 780px;
+      height: 60px;
+      margin-right: 30px;
+      font-size: 20px;
+      margin-left: auto;
+
+      .nav_list {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav_item {
+          display: flex;
+          width: max-content;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          a {
+            padding-top: 12px;
+            margin-left: 10px;
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .nav_item:hover {
+          background-color: $color-nav-item-hover;
+          transform: scale(1.15);
+          border-radius: 10px;
+        }
+
+        .nav_item_active {
+          background-color: $color-nav-item-active;
+          padding: 0 15px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .icon {
+      margin-top: 10px;
+      width: 55px;
+      height: 55px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .avatar {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header_outer {
+    .header_inner {
+      background-color: $color-black-transparent;
+
+      .user_center {
+        width: 211px;
+      }
+    }
+  }
+}

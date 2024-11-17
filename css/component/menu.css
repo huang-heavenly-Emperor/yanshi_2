@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.m_switch {
+  width: 100px;
+  transform: scale(0.5) translateX(-40px);
+  margin-left: 0px;
+  display: none;
+  /* 隐藏复选框 */
+  /* 汉堡菜单 */
+  /* 选中时的动画 */
+}
+
+.m_switch #menu {
+  visibility: hidden;
+  position: relative;
+}
+
+.m_switch label {
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: fixed;
+}
+
+.m_switch label:before {
+  content: "";
+  width: 100px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  border-radius: 5px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.m_switch label:after {
+  content: "";
+  width: 100px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  border-radius: 5px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.m_switch #menu:checked + label {
+  width: 0px;
+}
+
+.m_switch #menu:checked + label:before {
+  transform: rotate(45deg) translate(0);
+  -webkit-transform: rotate(45deg) translate(0);
+}
+
+.m_switch #menu:checked + label:after {
+  transform: rotate(-45deg) translate(0);
+  -webkit-transform: rotate(-45deg) translate(0);
+}

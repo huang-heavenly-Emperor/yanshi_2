@@ -1,0 +1,173 @@
+.theme_switch {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  /* label:active:after {
+      width: 20px;
+  } */
+}
+
+.theme_switch input[type=checkbox] {
+  height: 0;
+  width: 0;
+}
+
+.theme_switch label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+  /* filter: url('#gooey'); */
+  background: #595656;
+  box-shadow: 0 8px 16px -1px rgba(255, 70, 81, 0.2);
+  transition: .3s ease-in-out;
+  transition-delay: .2s;
+}
+
+.theme_switch label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background: #aea4a4;
+  border-radius: 21px;
+  /* transition: 0.3s; */
+  animation: expand-left .5s linear forwards;
+}
+
+.theme_switch input:checked + label {
+  /* background: #bada55; */
+  background: #69efa1;
+  box-shadow: 0 8px 16px -1px rgba(72, 234, 139, 0.8);
+  /* animation: jelly-left  */
+}
+
+.theme_switch input:checked + label:after {
+  background: #f4f19b;
+  animation: expand-right .5s linear forwards;
+  /* left: calc(100% - 5px); */
+  /* transform: translateX(-100%); */
+}
+
+@-webkit-keyframes expand-right {
+  0% {
+    left: 2px;
+    /* background:white; */
+  }
+  30%,
+  50% {
+    left: 2px;
+    width: 46px;
+  }
+  60% {
+    left: 34px;
+    width: 14px;
+  }
+  80% {
+    left: 24px;
+    width: 24px;
+  }
+  90% {
+    left: 29px;
+    width: 19px;
+  }
+  100% {
+    left: 27px;
+    width: 21px;
+  }
+}
+
+@keyframes expand-right {
+  0% {
+    left: 2px;
+    /* background:white; */
+  }
+  30%,
+  50% {
+    left: 2px;
+    width: 46px;
+  }
+  60% {
+    left: 34px;
+    width: 14px;
+  }
+  80% {
+    left: 24px;
+    width: 24px;
+  }
+  90% {
+    left: 29px;
+    width: 19px;
+  }
+  100% {
+    left: 27px;
+    width: 21px;
+  }
+}
+
+@-webkit-keyframes expand-left {
+  0% {
+    left: 27px;
+    /* background:white; */
+  }
+  30%,
+  50% {
+    left: 2px;
+    width: 46px;
+  }
+  60% {
+    right: 34px;
+    width: 14px;
+  }
+  80% {
+    right: 24px;
+    width: 24px;
+  }
+  90% {
+    right: 29px;
+    width: 19px;
+  }
+  100% {
+    left: 2px;
+    width: 21px;
+  }
+}
+
+@keyframes expand-left {
+  0% {
+    left: 27px;
+    /* background:white; */
+  }
+  30%,
+  50% {
+    left: 2px;
+    width: 46px;
+  }
+  60% {
+    right: 34px;
+    width: 14px;
+  }
+  80% {
+    right: 24px;
+    width: 24px;
+  }
+  90% {
+    right: 29px;
+    width: 19px;
+  }
+  100% {
+    left: 2px;
+    width: 21px;
+  }
+}
+
+.theme_switch:hover {
+  transform: scale(1.2);
+}

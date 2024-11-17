@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/avatar.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/component/menu.css">
+  <link rel="stylesheet" href="./css/rest.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout/head.css">
+  <link rel="stylesheet" href="./css/component/btn_switch.css">
+  <link rel="stylesheet" href="./css/component/btn_glowing.css">
+
+  <link rel="stylesheet" href="./assets\font_4724780_qwroj32ys3\iconfont.css">
+  <script src="./assets/font_4724780_qwroj32ys3/iconfont.js"></script>
+
+  <title>我的作业</title>
+  <style>
+    /* 为整个页面应用Roboto字体 */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* 设置加粗样式的标题 */
+    h1,
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<div class="header_outer">
+  <div class="header_inner ">
+    <div class="logo"><img src="./assets/log.png" alt=""></div>
+    <div class="m_switch">
+      <input id="menu" type="checkbox">
+      <label for="menu"></label>
+
+    </div>
+
+    <div class="user_center">
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item nav_item_active" data-index="0">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-shouye"></use>
+            </svg>
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav_item" data-index="1">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-guanyu"></use>
+            </svg>
+            <a href="#about_me">abuout</a>
+          </li>
+          <li class="nav_item" data-index="2">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-address-01"></use>
+            </svg>
+            <a href="#suggestion_to_travel">Suggestion</a>
+          </li>
+          <li class="nav_item" data-index="3">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-xiangmu"></use>
+            </svg>
+            <a href="#Forum">Forum</a>
+          </li>
+          <li class="nav_item" data-index="4">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-youjian"></use>
+            </svg>
+            <a href="#contact_me">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div style="display: none;" class="search">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-fangdajing"></use>
+        </svg>
+      </div>
+      <div style="display: none;" class="theme_switch">
+        <input type="checkbox" name="gooey-switch" id="gooey-switch" checked />
+        <label for="gooey-switch">On/Off</label>
+      </div>
+      <div style="display: none;" class="user_avatar">
+        <img class="avatar" src="./assets/avatar.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div id="home" class="all_screen nav_to_link">
+    <div class="travel_video" data-video_audio="0">
+      <video class="travel_video_paly" src="./assets/video/travel_video_1.mp4" autoplay muted controls></video>
+      <div class="preview_btn ">
+        <span class="iconfont icon-forward_flat"></span>
+      </div>
+      <div class="next_btn ">
+        <span class="iconfont icon-forward_flat"></span>
+      </div>
+
+    </div>
+    <div class="home_main">
+
+
+      <h2 class="home_title">
+        哈喽！大家好。
+      </h2>
+
+      <p class="home_desc">
+        欢迎来到澳大利亚！这里拥有绚丽的自然风光和丰富的文化遗产。从壮观的大堡礁到迷人的乌鲁鲁岩，您将体验到大自然的无与伦比的魅力。您可以在悉尼的标志性歌剧院与美丽的海港间漫步，或是在墨尔本的街头艺术和咖啡文化中感受城市的活力。无论您是想探索令人惊叹的国立公园，还是品味独特的澳大利亚美食，这里都将为您带来难忘的旅程。希望您在这里度过一个愉快而难忘的假期！
+      </p>
+      <div class="home_btn">
+        <a href="javscript:;" class="btn_glowing">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          让我们开始吧！</a>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="about_me" class="all_screen nav_to_link">
+    <h1 class="public_title about_me_title">关于我</h1>
+    <div class="about_me_main">
+
+      <div class="about_desc">
+
+        <P>Welcome to EZ Travel AU! We are a platform dedicated to providing convenient and enriching travel experiences
+          for all travelers. Whether you're a family traveler, an adventure-seeking extreme sports enthusiast, or a
+          traveler who enjoys laid-back tranquility, EZ Travel AU has a selection of Australia's most beautiful
+          destinations that cater to different styles of travel. </P>
+
+        <P>EZ Travel AU is more than just a website, it's a community where travelers can share experiences and discover
+          their next destination. Join us and start exploring today! </P>
+      </div>
+      <div class="about_me_pic">
+        <img class="about_pic" src="./assets/log.png" alt="">
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <div id="suggestion_to_travel" class="suggestion_to_travel nav_to_link">
+    <h1 class=" public_title">Suggestion to Travel</h1>
+    <ul class="sug_tra_list">
+
+
+      <li class="sug_tra_item">
+        <div class="sug_tra_pic">
+          <img src="./assets/travel_01.png" alt="">
+          <div class="sug_tra_desc">
+            <h1 class="sug_tra_title">Family Outing: Sydney Opera House & Sydney Harbour</h1>
+            <p class="sug_tra_desc_p">
+              A perfect spot for families, with the iconic Opera House, harbour cruises, and Taronga Zoo. Explore
+              Sydney’s famous landmarks together.
+            </p>
+          </div>
+        </div>
+        <div class="sug_tra_to">
+          <a href="https://www.youtube.com/watch?v=UPHF5uZJJaU" class="btn_glowing" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            去这里</a>
+        </div>
+      </li>
+      <li class="sug_tra_item">
+        <div class="sug_tra_pic">
+          <img src="./assets/travel_02.png" alt="">
+          <div class="sug_tra_desc">
+            <h1 class="sug_tra_title">2.Adventure Seekers: Cradle Mountain, Tasmania</h1>
+            <p class="sug_tra_desc_p">
+              Cradle Mountain offers breathtaking natural scenery and extreme activities such as hiking, rock climbing,
+              and canyon rafting, perfect for thrill-seekers.
+            </p>
+          </div>
+        </div>
+        <div class="sug_tra_to">
+          <a href="https://www.youtube.com/watch?v=SqT4m1taVTM" class="btn_glowing" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            去这里</a>
+        </div>
+      </li>
+      <!-- <li class="sug_tra_item">
+        <div class="sug_tra_pic">
+          <img src="./assets/travel_03.png" alt="">
+          <div class="sug_tra_desc">
+            <h1 class="sug_tra_title">3.Laid-Back Travelers: Blue Mountains National Park</h1>
+            <p class="sug_tra_desc_p">
+              Ideal for easygoing travelers, with scenic trails, waterfalls, and cable car rides. Perfect for a peaceful
+              escape close to Sydney.
+            </p>
+          </div>
+        </div>
+        <div class="sug_tra_to">
+          <a href="https://www.youtube.com/watch?v=hfuI3t7W_tk" class="btn_glowing" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            去这里</a>
+        </div>
+      </li> -->
+      <li class="sug_tra_item">
+        <div class="sug_tra_pic">
+          <img src="./assets/travel_04.png" alt="">
+          <div class="sug_tra_desc">
+            <div class="sug_tra_title">4.Luxury Travelers: Kangaroo Island</div>
+            <p class="sug_tra_desc_p">
+
+              With high-end eco-lodges and stunning coastlines, Kangaroo Island offers tranquil natural beauty for
+              luxury travelers. Enjoy gourmet dining, wine tasting, and private nature tours.
+            </p>
+          </div>
+        </div>
+        <div class="sug_tra_to">
+          <a href="https://www.youtube.com/watch?v=O6pJtVMqBIw" class="btn_glowing" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            去这里</a>
+        </div>
+      </li>
+      <li class="sug_tra_item">
+        <div class="sug_tra_pic">
+          <img src="./assets/travel_05.png" alt="">
+          <div class="sug_tra_desc">
+            <h1 class="sug_tra_title">5.Friends’ Getaway: Great Ocean Road</h1>
+            <p class="sug_tra_desc_p">
+              A scenic road trip with friends, featuring beaches, surf towns, and the Twelve Apostles. Capture stunning
+              coastal views together.
+            </p>
+          </div>
+        </div>
+        <div class="sug_tra_to">
+          <a href="https://www.youtube.com/watch?v=aszTdBlbfq0" class="btn_glowing" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            去这里</a>
+        </div>
+      </li>
+
+
+    </ul>
+
+  </div>
+  <div class="Forum  nav_to_link" id="Forum">
+    <div class="public_title">Forum</div>
+    <div class="Forum_main">
+      <div class="bullet_comments_area">
+        <div class="bullet_comment">
+
+          <div class="bullet_avatar"><img src="./assets/avatar.jpg" alt=""></div>
+          <p class="bullet_comment_content">这是一条评论</p>
+          <div class="bullet_comment_up">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weidianzan"></use>
+            </svg>
+            <span class="comment_up_num">123</span>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="send_comment">
+        <div class="left">已装填1000条弹幕</div>
+        <div class="right">
+
+          <input type="text" class="comment_input" placeholder="输入评论">
+          <div class="comment_btn">发送</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="contact_me nav_to_link " id="contact_me">
+    <h1 class="public_title">联系我</h1>
+    <div class="contact_me_main">
+      <div class="contact_me_all_link">
+        <a href="javascript:;">
+
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dianhua"></use>
+          </svg>
+          <span>+61 404986122</span>
+        </a>
+
+        <a  href="javascript:;">
+
+          <svg style="transform: scale(1.3);" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-youjian"></use>
+          </svg>
+          <span>wainwang98@gmail.com</span>
+        </a>
+
+        <a href="javascript:;">
+
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dianhuahujiao"></use>
+          </svg>
+          <span>+61 49496122</span>
+        </a>
+
+
+
+      </div>
+      <div class="contact_me_email">
+
+
+        <form class="contact_me_form">
+          <div class="contact_me_input_container">
+            <span class="label_input_type">Full Name:</span>
+            <input class="contact_input" type="text" name="name" placeholder="Enter full name">
+
+          </div>
+
+          <div class="contact_me_input_container" data-validate="Valid email is required: ex@abc.xyz">
+            <span class="label_input_type">Email:</span>
+            <input class="contact_input" type="text" name="email" placeholder="Enter email addess">
+
+          </div>
+
+          <div class="contact_me_input_container" data-validate="Phone is required">
+            <span class="label_input_type">Phone:</span>
+            <input class="contact_input" type="text" name="phone" placeholder="Enter phone number">
+
+          </div>
+
+          <div class="contact_me_input_container" data-validate="Message is required">
+            <span class="label_input_type">Message:</span>
+            <textarea class="contact_input" name="message" placeholder="Your Comment..."></textarea>
+
+          </div>
+
+          <button type="submit" class="contact_me_submit_container">
+            <div class="home_btn">
+              <span class="btn_glowing">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                提交
+              </span>
+            </div>
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+
+  </div>
+  <audio class="bg_music" loop="loop" src="./assets/music.MP3"></audio>
+</div>
+<div class="info_tip"></div>
+<div class="END"></div>
+<script src="./js/api.js"></script>
+<script src="./js/comments.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>
